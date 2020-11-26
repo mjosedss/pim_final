@@ -1,0 +1,136 @@
+/*Geral*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    color: #323232;
+    border: none;
+}
+
+
+body {
+
+background-image: url(../images/background1.jpg);
+background-size: cover;
+
+/*background-position-y: -200px;*/
+}
+textarea:focus, input:focus {
+    outline: none;
+}
+
+a, label /*tamanho links*/ {
+    font-size: .8rem;
+}
+
+    a:hover /*cor links*/ {
+        color: #08558b;
+    }
+
+
+.login-container {
+    background-color: white;
+    //width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px;
+    margin-top: 8vh;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+
+}
+
+.displayed {
+    margin-top: 3vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+/*formulario*/
+
+
+.lbl {
+    
+    text-align: left;
+    font-size: 1rem;
+}
+form {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+label, input {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+}
+
+input{
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px ;
+}
+
+input:focus /*cor da selecao*/{
+    border-bottom: 2px solid blue;
+}
+
+#forgot-pass{
+    text-align: right;
+    display: block;
+}
+
+#register-container{
+    text-align: center;
+}
+
+input[type="submit"]{
+text-align: center;
+text-transform: uppercase;
+font-weight: bold;
+border: none;
+height: 40px;
+border-radius: 20px;
+margin-top: 30px;
+color: white;
+background-color: orange;
+cursor: pointer;
+}
+
+input[type="submit"]:hover{
+background-color: orangered;
+transition: .5s;
+}
+
+
+
+.caixa[type=text]{ 
+
+border-radius:4px;
+-moz-border-radius:4px;
+-webkit-border-radius:4px;
+box-shadow: 1px 1px 2px #333333;
+-moz-box-shadow: 1px 1px 2px #333333;
+-webkit-box-shadow: 1px 1px 2px #333333;
+background: #cccccc; 
+border:1px solid #000000;
+width:150px}
+
+textarea{border: 1px solid #000000;
+background:#cccccc;
+
+            
+ /*.caixa[type=text]:hover, textarea:hover{
+background: #ffffff; 
+border:1px solid #990000;}
+ .caixa[type=submit]{        
+background:#006699;        
+color:#ffffff;}*/
