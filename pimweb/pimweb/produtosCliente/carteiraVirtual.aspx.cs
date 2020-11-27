@@ -42,6 +42,7 @@ namespace pimweb.produtosCliente
             SqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             {
+                
                 //resultado = reader.GetInt32(0);
 
                 extrato += "Operação: " + reader["OPE_STR_TIPO"].ToString() + " - Valor: " + reader["OPC_DOU_VALOR"].ToString() + " Bitcoins " + " - Data: " + reader["OPC_DAT_Data"].ToString() + "</br>";
@@ -56,14 +57,25 @@ namespace pimweb.produtosCliente
                 n = n * 0;
 
             }
-            //Imprime dados em tela
-            conn.Close();
-            Saldo = Convert.ToDouble(valor2);
-            saldoatual = Saldo;
-            operacoes.Text = extrato;
-            saldo.Text = valor;
-            cotacao1.Text = cotacao;
+            if (valor2 == "")
+            {
+                LinkButton1.Visible = false;
+                LinkButton3.Visible = false;
+                LinkButton4.Visible = false;
+                LinkButton2.Visible = false;
+                textooperacoes.Text = "Voce não possui conta ainda. Solicite contato do nosso setor comercial, atraves do canal fale conosco.";
 
+            }
+            else
+            {
+                //Imprime dados em tela
+                conn.Close();
+                Saldo = Convert.ToDouble(valor2);
+                saldoatual = Saldo;
+                operacoes.Text = extrato;
+                saldo.Text = valor;
+                cotacao1.Text = cotacao;
+            }
         }
 
         protected void Button1_Click(object sender, EventArgs e)
