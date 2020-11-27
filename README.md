@@ -13,9 +13,6 @@
 
 Este projeto do Github tem como objetivo apresentar ao orientador e demais avaliadores os conhecimentos e técnicas adquiridos no curso.
 
-## Utilização
-
-A explicação da utilização da aplicação e pode ser acompanhada através do vídeo disponível na plataforma youtube [clicando aqui](https://www.youtube.com).
 
 ## Ajuda
 
